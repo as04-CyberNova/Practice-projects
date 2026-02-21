@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 24px;
+}
+header {
+    background-color: rgba(34, 185, 205, 0.463);
+}
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    color: #1e293b;
+    font-weight: 700;
+}
+.links {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 18px;
+}
+.links li a {
+    text-decoration: none;
+}
+.links a {
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.links a:hover {
+    color: #ff5500;
+}
+.hero {
+    padding: 80px 20px;
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+}
+.hero a {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #6366f1;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, background 0.2s;
+}
+.hero button:hover {
+    background-color: #4f46e5;
+    transform: translateY(-2px);
+}
+.about {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f8fafc;
+}
+.skills {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f8fafc;
+}
+.skills-section {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.skill-card, .project-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.projects {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f8fafc;
+}
+.projects-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+.project-card a {
+    text-decoration: none;
+}
+.contact {
+    padding: 30px 20px;
+    background-color: #f8fafc;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 350px;
+    margin: auto;
+}
+input, textarea {
+    padding: 8px;
+}
+footer {
+    background-color: #f8fafc;
+    color: black;
+    padding: 12px;
+    text-align: center;
+}

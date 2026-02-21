@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login - Student Dashboard Portal</title>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Those who try never lose</h2>
+        <p class="subtitle">Please login to continue</p>
+        <form name="loginForm" id="loginForm" onsubmit="return validateForm()">
+            <div class="field">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit">Login</button>
+            <p class="footer-text">Have a good day ahead &hearts;</p>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+        
+            if (username === "" || password === "") {
+                alert("Please fill all fields");
+                return false;
+            }
+            localStorage.setItem("loggedInUser", username);
+            window.location.href = "dashboard.html";
+        
+            return false;
+        }
+    </script>              
+</body>
+</html>

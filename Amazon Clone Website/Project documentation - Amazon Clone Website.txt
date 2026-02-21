@@ -1,0 +1,15 @@
+Project Documentation – Amazon Clone Website
+
+Hello, today I am going to describe my ongoing project titled “Amazon Clone Website.” This project is a full user interface clone created using HTML5, CSS3, and Flexbox.
+
+The website includes the following components:
+
+1. Navigation bar
+2. Navigation panels
+3. Background section
+4. Shopping section
+5. Footer panel
+
+While working on this project, I have learned more about Flexbox and how useful it is for creating responsive and well-structured layouts using HTML5 and CSS3. At present, the project is 65% complete, and I plan to finish the remaining 35% in the coming days.
+
+This project required a significant amount of time and effort. During development, I encountered several errors, and resolving them often took more time than expected. At times, this was challenging and a little discouraging, but it also helped me improve my problem-solving skills and understanding of web development.

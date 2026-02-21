@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Welcome to My Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="title">Personal Portfolio Website - Redesigned</h2>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1>Hello, i'm currently a Web </h1>
+        <p>Building strong foundations with HTML and CSS</p>
+        <a href="https://github.com/as04-CyberNova" class="btn">View My Work</a>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am currently learning web development and focusing on building the clean and responsive layouts using HTML and CSS.
+            I enjoy learning step by step and polishing my fundamentals.
+        </p>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-section">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">FLEXBOX</div>
+            <div class="skill-card">GITHUB</div>
+            <div class="skill-card">VS CODE</div>
+            <div class="skill-card">JAVASCRIPT</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C</div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-section">
+            <div class="project-card">
+                <h3>Amazon Clone Website</h3>
+                <p>Simple Amazon clone website using html and css flexbox.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>College Erp Website</h3>
+                <p>College ERP website built using html, css and javascript.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Login Form</h3>
+                <p>Simple login form using html and css flexbox.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Login Form - Redesigned</h3>
+                <p>Redesigned login form using html and css flexbox.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio Website - Redesigned</h3>
+                <p>My personal portfolio website built using html, css and javascript</p>
+                <a href="https://github.com/as04-CyberNova/Porfolio">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Responsive Landing Page</h3>
+                <p>Responsive landing page built using html and css flexbox.</p>
+                <a href="https://github.com/as04-CyberNova/Practice-projects/tree/main/Responsive%20Landing%20Page">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Student Dashboard UI</h3>
+                <p>Student dashboard UI built using html and css flexbox.</p>
+                <a href="https://github.com/as04-CyberNova/Practice-projects/tree/main/Student%20Dashboard%20UI">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Student Portal dashboard</h3>
+                <p>Student portal dashboard built using html, css and javascript.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form name="contactForm" id="contactForm" onsubmit="return validateForm()">
+            <input type="text" placeholder="Your Name" id="name">
+            <input type="email" placeholder="Your Email" id="email">
+            <textarea placeholder="Your Message" id="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 | Built with HTML & CSS</p>
+    </footer>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+        
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill all fields");
+                return false;
+            }
+            alert("Message sent successfully!");
+            return false;
+        }
+    </script>
+</body>
+</html>
